@@ -16,3 +16,30 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   z-index: -1; /* Ensure this is correct */
   border: 1px solid red; /* Temporary border for debugging */
 }
+
+.custom-timeline.vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns::before {
+  display: none; /* Hide the timeline line */
+}
+
+.profile-container {
+  display:flex;
+  align-items:center;
+  margin:15%;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+.profile-title{
+  margin-bottom: 2%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .profile-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .profile-title{
+    margin-top: 10%;
+  }
+}
