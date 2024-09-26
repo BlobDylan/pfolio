@@ -1,9 +1,20 @@
 import { Box, Typography } from "@mui/material";
+import { useEffect } from "react";
+import "./Profile.css";
 
 function Profile() {
+  useEffect(() => {
+    const img = document.querySelector(".profile-img");
+    const text = document.querySelector(".profile-text");
+
+    img.classList.add("slide-in-left");
+    text.classList.add("slide-in-right");
+  }, []);
+
   return (
     <Box className="profile-container">
       <img
+        className="profile-img"
         src={"/me.png"}
         alt="Me"
         style={{
@@ -14,6 +25,7 @@ function Profile() {
         }}
       />
       <Typography
+        className="profile-text"
         variant="body1"
         align="left"
         color="white"
