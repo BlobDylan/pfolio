@@ -2,8 +2,9 @@ import "./App.css";
 
 import ParticleBackground from "./components/Background/Particle";
 import Profile from "./components/Profile/Profile";
-import Timeline from "./components/Timeline/Timeline";
 import Tech from "./components/Tech/Tech";
+import Timeline from "./components/Timeline/Timeline";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
 import { Link } from "react-router-dom";
@@ -42,6 +43,10 @@ function App() {
         Timeline
       </Typography>
       <Timeline />
+      <Typography variant="h2" align="left" color="white" margin={"75px"}>
+        Projects
+      </Typography>
+      <Projects />
       <Footer />
     </>
   );
