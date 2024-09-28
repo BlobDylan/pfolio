@@ -23,6 +23,7 @@ export default function Footer() {
         backgroundColor: "#1c1c1c",
         padding: (theme) => theme.spacing(4),
         color: "white",
+        opacity: "0.9",
       }}
     >
       <Container maxWidth="lg">

@@ -20,7 +20,7 @@ function Profile() {
         style={{
           height: "300px",
           borderRadius: "10%",
-          border: "5px solid #ffffaa",
+          border: "5px solid #2e9e93",
           margin: "auto",
         }}
       />

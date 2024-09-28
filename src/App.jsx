@@ -32,7 +32,7 @@ function App() {
         </Fab>
       </Link>
       <Typography variant="h1" align="left" color="white" margin={"50px"}>
-        Hi, I'M <span style={{ color: "#ffffaa" }}>Dylan</span>
+        Hi, I'M <span style={{ color: "#2e9e93" }}>Dylan</span>
       </Typography>
       <Profile />
       <Typography variant="h2" align="left" color="white" margin={"75px"}>
@@ -40,7 +40,7 @@ function App() {
       </Typography>
       <Tech />
       <Typography variant="h2" align="left" color="white" margin={"75px"}>
-        Timeline
+        Education
       </Typography>
       <Timeline />
       <Typography variant="h2" align="left" color="white" margin={"75px"}>

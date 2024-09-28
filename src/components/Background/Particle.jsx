@@ -19,9 +19,7 @@ function ParticleBackground() {
       loaded={particlesLoaded}
       options={{
         background: {
-          color: {
-            value: "#111111",
-          },
+          image: "radial-gradient( #1B2735 0%, #090A0F 100%)",
         },
         fpsLimit: 120,
         interactivity: {

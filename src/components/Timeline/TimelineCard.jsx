@@ -6,7 +6,7 @@ function TimelineCard({ cardContent }) {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "#1c1c1c", color: "#fff" }}
+      contentStyle={{ background: "#1c1c1c", color: "#fff", opacity: "0.9" }}
       contentArrowStyle={{ borderRight: "10px solid  #1c1c1c" }}
       date={cardContent.date}
       iconStyle={{ background: "#1c1c1c", color: "#fff" }}
