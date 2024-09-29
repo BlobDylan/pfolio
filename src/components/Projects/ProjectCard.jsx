@@ -46,42 +46,42 @@ function ProjectCard({ title, description, image, link, skills }) {
           {title}
         </Typography>
         <Typography variant="body2">{description}</Typography>
-        <Typography variant="body2">
-          <ul
-            style={{
-              listStyleType: "none",
-              padding: 0,
-              margin: 0,
-              marginTop: "10px",
-              display: "flex",
-              flexWrap: "wrap",
-            }}
-          >
-            {skills &&
-              Object.keys(skills).map((skill, index) => (
-                <li
+        <ul
+          style={{
+            listStyleType: "none",
+            padding: 0,
+            margin: 0,
+            marginTop: "10px",
+            display: "flex",
+            flexWrap: "wrap",
+            fontFamily: "Roboto",
+            fontWeight: "lighter",
+          }}
+        >
+          {skills &&
+            Object.keys(skills).map((skill, index) => (
+              <li
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginRight: "10px",
+                }}
+                key={index}
+              >
+                <span
                   style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginRight: "10px",
+                    display: "inline-block",
+                    width: "10px",
+                    height: "10px",
+                    borderRadius: "50%",
+                    backgroundColor: skills[skill],
+                    marginRight: "5px",
                   }}
-                  key={index}
-                >
-                  <span
-                    style={{
-                      display: "inline-block",
-                      width: "10px",
-                      height: "10px",
-                      borderRadius: "50%",
-                      backgroundColor: skills[skill],
-                      marginRight: "5px",
-                    }}
-                  ></span>
-                  {skill}
-                </li>
-              ))}
-          </ul>
-        </Typography>
+                ></span>
+                {skill}
+              </li>
+            ))}
+        </ul>
       </CardContent>
       <CardActions>
         <IconButton href={link} target="_blank" rel="noopener noreferrer">
