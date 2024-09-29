@@ -9,7 +9,7 @@ import {
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-function ProjectCard({ title, description, image, link }) {
+function ProjectCard({ title, description, image, link, skills }) {
   return (
     <Card
       sx={{
@@ -17,6 +17,7 @@ function ProjectCard({ title, description, image, link }) {
           xs: "80%",
           sm: "23%",
         },
+        height: "550px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -44,6 +45,42 @@ function ProjectCard({ title, description, image, link }) {
           {title}
         </Typography>
         <Typography variant="body2">{description}</Typography>
+        <Typography variant="body2">
+          <ul
+            style={{
+              listStyleType: "none",
+              padding: 0,
+              margin: 0,
+              marginTop: "10px",
+              display: "flex",
+              flexWrap: "wrap",
+            }}
+          >
+            {skills &&
+              Object.keys(skills).map((skill, index) => (
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginRight: "10px",
+                  }}
+                  key={index}
+                >
+                  <span
+                    style={{
+                      display: "inline-block",
+                      width: "10px",
+                      height: "10px",
+                      borderRadius: "50%",
+                      backgroundColor: skills[skill],
+                      marginRight: "5px",
+                    }}
+                  ></span>
+                  {skill}
+                </li>
+              ))}
+          </ul>
+        </Typography>
       </CardContent>
       <CardActions>
         <IconButton href={link} target="_blank" rel="noopener noreferrer">
