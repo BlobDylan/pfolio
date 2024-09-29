@@ -3,21 +3,24 @@ import { Box } from "@mui/material";
 
 const ProjectsMap = {
   1: {
-    title: "Project 1",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/me.png",
+    title: "Coming Soon",
+    description: "Coming Soon",
+    image: "/Coming_Soon.jpg",
+    link: "https://github.com/BlobDylan/",
   },
   2: {
-    title: "Project 2",
-    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/me.png",
+    title: "This Website",
+    description:
+      "This website you are viewing right now. Built using React and Vite.",
+    image: "/Website_Project.PNG",
+    link: "https://github.com/BlobDylan/pfolio",
   },
   3: {
-    title: "Project 3",
+    title: "IOT Project",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/me.png",
+      "In this project, I Built a game for kids to learn math. It was built using an esp32 and some sensors and inputs.",
+    image: "/IOT_Project.jpg",
+    link: "https://www.instructables.com/Math-Teaching-Game/",
   },
 };
 
@@ -28,6 +31,11 @@ function Projects() {
         display: "flex",
         justifyContent: "space-evenly",
         marginBottom: "5%",
+        flexDirection: {
+          xs: "column",
+          sm: "row",
+        },
+        alignItems: "center",
       }}
     >
       {Object.keys(ProjectsMap).map((key) => {
@@ -36,6 +44,7 @@ function Projects() {
             title={ProjectsMap[key].title}
             description={ProjectsMap[key].description}
             image={ProjectsMap[key].image}
+            link={ProjectsMap[key].link}
           />
         );
       })}

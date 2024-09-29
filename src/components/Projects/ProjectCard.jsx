@@ -9,11 +9,14 @@ import {
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-function ProjectCard({ title, description, image }) {
+function ProjectCard({ title, description, image, link }) {
   return (
     <Card
       sx={{
-        width: "22vw",
+        width: {
+          xs: "80%",
+          sm: "23%",
+        },
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -27,7 +30,7 @@ function ProjectCard({ title, description, image }) {
         },
       }}
     >
-      <CardMedia component={"img"} height="140" image={image} alt="project" />
+      <CardMedia component={"img"} height="300" image={image} alt="project" />
       <CardContent
         sx={{
           flexGrow: 1,
@@ -43,7 +46,7 @@ function ProjectCard({ title, description, image }) {
         <Typography variant="body2">{description}</Typography>
       </CardContent>
       <CardActions>
-        <IconButton>
+        <IconButton href={link} target="_blank" rel="noopener noreferrer">
           <OpenInNewIcon sx={{ color: "#ffffff" }} />
         </IconButton>
       </CardActions>
