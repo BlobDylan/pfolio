@@ -33,15 +33,7 @@ export default function Footer() {
         <SocialIcons>
           <IconButton
             component="a"
-            href="https://www.X.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <XIcon sx={{ color: "#ffffff" }} />
-          </IconButton>
-          <IconButton
-            component="a"
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/dylan-lewis-989955279/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,23 +41,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             component="a"
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookIcon sx={{ color: "#ffffff" }} />
-          </IconButton>
-          <IconButton
-            component="a"
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon sx={{ color: "#ffffff" }} />
-          </IconButton>
-          <IconButton
-            component="a"
-            href="https://www.github.com"
+            href="https://github.com/BlobDylan"
             target="_blank"
             rel="noopener noreferrer"
           >

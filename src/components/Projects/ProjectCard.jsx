@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 function ProjectCard({ title, description, image }) {
   return (
@@ -44,7 +44,7 @@ function ProjectCard({ title, description, image }) {
       </CardContent>
       <CardActions>
         <IconButton>
-          <GitHubIcon sx={{ color: "#ffffff" }} />
+          <OpenInNewIcon sx={{ color: "#ffffff" }} />
         </IconButton>
       </CardActions>
     </Card>
