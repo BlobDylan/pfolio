@@ -31,19 +31,43 @@ function App() {
           Download CV
         </Fab>
       </Link>
-      <Typography variant="h1" align="left" color="white" margin={"50px"}>
-        Hi, I'M <span style={{ color: "#2e9e93" }}>Dylan</span>
+      <Typography
+        fontWeight="bold"
+        variant="h1"
+        align="left"
+        color="white"
+        margin={"50px"}
+      >
+        Hi, I'm <span style={{ color: "#2e9e93" }}>Dylan</span>
       </Typography>
       <Profile />
-      <Typography variant="h2" align="left" color="white" margin={"75px"}>
+      <Typography
+        fontWeight="bold"
+        variant="h2"
+        align="left"
+        color="white"
+        margin={"75px"}
+      >
         Technologies
       </Typography>
       <Tech />
-      <Typography variant="h2" align="left" color="white" margin={"75px"}>
+      <Typography
+        fontWeight="bold"
+        variant="h2"
+        align="left"
+        color="white"
+        margin={"75px"}
+      >
         Education
       </Typography>
       <Timeline />
-      <Typography variant="h2" align="left" color="white" margin={"75px"}>
+      <Typography
+        fontWeight="bold"
+        variant="h2"
+        align="left"
+        color="white"
+        margin={"75px"}
+      >
         Projects
       </Typography>
       <Projects />

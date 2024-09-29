@@ -16,7 +16,14 @@ function TimelineCard({ cardContent }) {
       <h4 className="vertical-timeline-element-subtitle">
         {cardContent.subtitle}
       </h4>
-      <p>{cardContent.text}</p>
+      <p>{cardContent.text.description}</p>
+      {cardContent.text.courses && (
+        <ul>
+          {cardContent.text.courses.map((course, index) => (
+            <li key={index}>{course}</li>
+          ))}
+        </ul>
+      )}
     </VerticalTimelineElement>
   );
 }
