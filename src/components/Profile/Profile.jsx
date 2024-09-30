@@ -35,7 +35,7 @@ function Profile() {
         marginTop={"0px"}
         marginBottom={"0px"}
       >
-        <span className="profile-title">Profile</span>
+        <span className="profile-title">Profile ooo</span>
         <br />
         Committed software enthusiast, passionate learner and constantly
         curious. Currently attending my second year of studies towards my
