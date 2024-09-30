@@ -32,7 +32,12 @@ function ProjectCard({ title, description, image, link, skills }) {
         },
       }}
     >
-      <CardMedia component={"img"} height="300" image={image} alt="project" />
+      <CardMedia
+        component={"img"}
+        height="300"
+        image={import.meta.env.BASE_URL + image}
+        alt="project"
+      />
       <CardContent
         sx={{
           flexGrow: 1,

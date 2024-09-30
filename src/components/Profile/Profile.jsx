@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useEffect } from "react";
 import "./Profile.css";
+import profileimage from "/me.png";
 
 function Profile() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function Profile() {
     <Box className="profile-container">
       <img
         className="profile-img"
-        src={"/me.png"}
+        src={profileimage}
         alt="Me"
         style={{
           height: "300px",

@@ -7,7 +7,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/pfolio/">
       <App />
     </BrowserRouter>
   </StrictMode>
