@@ -2,7 +2,7 @@
   "name": "pfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://BlobDylan.github.io/pfolio",
+  "homepage": "https://BlobDylan.github.io/pfolio/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
