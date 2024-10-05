@@ -47,7 +47,7 @@ function App() {
         variant="h2"
         align="left"
         color="white"
-        margin={"75px"}
+        margin={"25px"}
       >
         Technologies
       </Typography>
@@ -57,7 +57,7 @@ function App() {
         variant="h2"
         align="left"
         color="white"
-        margin={"75px"}
+        margin={"25px"}
       >
         Education
       </Typography>
@@ -67,7 +67,7 @@ function App() {
         variant="h2"
         align="left"
         color="white"
-        margin={"75px"}
+        margin={"25px"}
       >
         Projects
       </Typography>

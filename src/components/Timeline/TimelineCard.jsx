@@ -1,4 +1,5 @@
 import React from "react";
+import { Typography } from "@mui/material";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -13,15 +14,19 @@ function TimelineCard({ cardContent }) {
       iconStyle={{ background: "#1c1c1c", color: "#fff" }}
       icon={<WorkIcon />}
     >
-      <h3 className="vertical-timeline-element-title">{cardContent.title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <Typography variant="h5" className="vertical-timeline-element-title">
+        {cardContent.title}
+      </Typography>
+      <Typography variant="h6" className="vertical-timeline-element-subtitle">
         {cardContent.subtitle}
-      </h4>
-      <p>{cardContent.text.description}</p>
+      </Typography>
+      <Typography variant="body1">{cardContent.text.description}</Typography>
       {cardContent.text.courses && (
         <ul>
           {cardContent.text.courses.map((course, index) => (
-            <li key={index}>{course}</li>
+            <li key={index}>
+              <Typography variant="body2">{course}</Typography>
+            </li>
           ))}
         </ul>
       )}

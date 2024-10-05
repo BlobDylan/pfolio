@@ -17,6 +17,7 @@ function ProjectCard({ title, description, image, link, skills }) {
         width: {
           xs: "80%",
           sm: "23%",
+          marginBottom: "20px",
         },
         height: "550px",
         display: "flex",
